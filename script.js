@@ -13,7 +13,7 @@ const getGenres = async () => {
       return genres;
     }
   } catch (error) {
-    console.log(error);
+    return error;
   }
 };
 
@@ -30,7 +30,7 @@ const getMovies = async () => {
       return movies;
     }
   } catch (error) {
-    console.log(error);
+    return error;
   }
 };
 
@@ -46,7 +46,7 @@ const getMovieInfo = async (movie) => {
       return movieInfo;
     }
   } catch (error) {
-    console.log(error);
+    return error;
   }
 };
 
