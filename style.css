@@ -109,11 +109,3 @@ select {
   justify-content: center;
   align-items: center;
 }
-
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: #7f0920;
-    color: #0a0408;
-    height: 100%;
-  }
-}
