@@ -2,7 +2,7 @@
 
 > This project uses the movie database API to help users find they're favorite genres of movies. A user can skip a movie they don't like by clicking the thumb down image. This then prompts the API to search for another movie in the same genre.
 
-### Click [here]() to see deployed live version
+### Click [here](https://d2ndjim.github.io/Film-Finder/) to see deployed live version
 
 ### Features implemented so far are:
 
