@@ -1,4 +1,4 @@
-# LEADERBOARD PROJECT
+# FILM FINDER
 
 > This project uses the movie database API to help users find they're favorite genres of movies. A user can skip a movie they don't like by clicking the thumb down image. This then prompts the API to search for another movie in the same genre.
 
