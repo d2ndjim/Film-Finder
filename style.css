@@ -7,7 +7,7 @@ body {
 
 #appTitle {
   text-align: center;
-  margin: 0px auto;
+  margin: 0 auto;
   display: block;
   font-family: 'Staatliches', sans-serif;
   font-size: 100px;
@@ -16,7 +16,7 @@ body {
 #genreForm,
 #playBtn {
   text-align: center;
-  margin: 0px auto;
+  margin: 0 auto;
   display: block;
   font-family: 'Fredoka One', sans-serif;
 }
@@ -27,7 +27,7 @@ body {
   font-size: larger;
 }
 
-#movieInfo:after {
+#movieInfo::after {
   content: "";
   display: table;
   clear: both;
@@ -47,8 +47,8 @@ img#moviePoster {
 }
 
 #movieText {
-  font-family: 'Questrial';
-  color: #FEFBEA;
+  font-family: 'Questrial', sans-serif;
+  color: #fefbea;
   line-height: 1.25;
 }
 
@@ -58,7 +58,7 @@ img#moviePoster {
   padding: 7px 10px;
   border-radius: 10px;
   border-style: none;
-  background-color: #B97828;
+  background-color: #b97828;
   color: #fdc238;
   cursor: pointer;
 }
@@ -71,12 +71,12 @@ label {
 
 select {
   width: 40%;
-  height: 33px
+  height: 33px;
 }
 
 #likeOrDislikeBtns {
   text-align: center;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 #likeBtn,

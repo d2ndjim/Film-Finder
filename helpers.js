@@ -1,9 +1,9 @@
 // Populate dropdown menu with all the available genres
 const populateGenreDropdown = (genres) => {
-  const select = document.getElementById("genres");
+  const select = document.getElementById('genres');
 
   for (const genre of genres) {
-    let option = document.createElement("option");
+    const option = document.createElement('option');
     option.value = genre.id;
     option.text = genre.name;
     select.appendChild(option);
@@ -12,22 +12,22 @@ const populateGenreDropdown = (genres) => {
 
 // Returns the current genre selection from the dropdown menu
 const getSelectedGenre = () => {
-  const selectedGenre = document.getElementById("genres").value;
+  const selectedGenre = document.getElementById('genres').value;
   return selectedGenre;
 };
 
 // Displays the like and dislike buttons on the page
 const showBtns = () => {
-  const btnDiv = document.getElementById("likeOrDislikeBtns");
-  btnDiv.removeAttribute("hidden");
+  const btnDiv = document.getElementById('likeOrDislikeBtns');
+  btnDiv.removeAttribute('hidden');
 };
 
 // Clear the current movie from the screen
 const clearCurrentMovie = () => {
-  const moviePosterDiv = document.getElementById("moviePoster");
-  const movieTextDiv = document.getElementById("movieText");
-  moviePosterDiv.innerHTML = "";
-  movieTextDiv.innerHTML = "";
+  const moviePosterDiv = document.getElementById('moviePoster');
+  const movieTextDiv = document.getElementById('movieText');
+  moviePosterDiv.innerHTML = '';
+  movieTextDiv.innerHTML = '';
 };
 
 // After liking a movie, clears the current movie from the screen and gets another random movie
@@ -46,17 +46,17 @@ const dislikeMovie = () => {
 const createMoviePoster = (posterPath) => {
   const moviePosterUrl = `https://image.tmdb.org/t/p/original/${posterPath}`;
 
-  const posterImg = document.createElement("img");
-  posterImg.setAttribute("src", moviePosterUrl);
-  posterImg.setAttribute("id", "moviePoster");
+  const posterImg = document.createElement('img');
+  posterImg.setAttribute('src', moviePosterUrl);
+  posterImg.setAttribute('id', 'moviePoster');
 
   return posterImg;
 };
 
 // Create HTML for movie title
 const createMovieTitle = (title) => {
-  const titleHeader = document.createElement("h1");
-  titleHeader.setAttribute("id", "movieTitle");
+  const titleHeader = document.createElement('h1');
+  titleHeader.setAttribute('id', 'movieTitle');
   titleHeader.innerHTML = title;
 
   return titleHeader;
@@ -64,8 +64,8 @@ const createMovieTitle = (title) => {
 
 // Create HTML for movie overview
 const createMovieOverview = (overview) => {
-  const overviewParagraph = document.createElement("p");
-  overviewParagraph.setAttribute("id", "movieOverview");
+  const overviewParagraph = document.createElement('p');
+  overviewParagraph.setAttribute('id', 'movieOverview');
   overviewParagraph.innerHTML = overview;
 
   return overviewParagraph;
@@ -80,10 +80,10 @@ const getRandomMovie = (movies) => {
 
 // Uses the DOM to create HTML to display the movie
 const displayMovie = (movieInfo) => {
-  const moviePosterDiv = document.getElementById("moviePoster");
-  const movieTextDiv = document.getElementById("movieText");
-  const likeBtn = document.getElementById("likeBtn");
-  const dislikeBtn = document.getElementById("dislikeBtn");
+  const moviePosterDiv = document.getElementById('moviePoster');
+  const movieTextDiv = document.getElementById('movieText');
+  const likeBtn = document.getElementById('likeBtn');
+  const dislikeBtn = document.getElementById('dislikeBtn');
 
   // Create HTML content containing movie info
   const moviePoster = createMoviePoster(movieInfo.poster_path);
